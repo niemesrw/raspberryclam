@@ -10,7 +10,7 @@ gzip -cd splunkforwarder*.tgz | tar xvf - -C /opt
 
 chown -R splunk:splunk /opt/splunkforwarder
 
-sudo -u splunk /opt/splunkforwarder/bin/splunk start --accept-license --answer-yes --no-prompt --seed-passwd changeme
+sudo -u splunk /opt/splunkforwarder/bin/splunk start --accept-license --answer-yes --no-prompt --gen-and-print-passwd
 
 /opt/splunkforwarder/bin/splunk enable boot-start
 
